@@ -6,7 +6,7 @@ Two of the most popular mock frameworks present in golang are [mockery](https://
 Both the frameworks are widely popular. Here are some key points that could help you decide which one to choose:
 
 [Mockery](https://godoc.org/github.com/vektra/mockery/mockery):
-1. Mockery provides you a very simple mocking framework that let's you disctate the input and expected output:
+1. Mockery provides you a very simple mocking framework that let's you dictate the input and expected output:
 eg: 
 ```
 mockSample.On("Insert", mockThing).Return(5)
@@ -45,3 +45,4 @@ gomock.InOrder(
 3. Other features include the argument matchers, the ability to specifying mock actions.
 
 
+Based on the features we discussed, gomock is the winner. Go for gomock if you are still confused what to choose :+1:
