@@ -19,13 +19,14 @@ This is a nice article that helped me increase my understanding for gomock: http
 
 1. gomock provides functionality to pass **Times** parameter, which allows you to specify the number of times the function under consideration should run while executing some test.
 This is a very handy feature and increases the quality of you test several times. 
-eg: 
-quoting the [article](https://blog.codecentric.de/en/2017/08/gomock-tutorial/):
+
+eg: quoting the [article](https://blog.codecentric.de/en/2017/08/gomock-tutorial/):
 ```
 mockDoer.EXPECT().DoSomething(123, "Hello GoMock").Return(nil).Times(1)
 ```
 2. Another useful thing is ability to assert the call order:
-again the [article](https://blog.codecentric.de/en/2017/08/gomock-tutorial/):
+
+eg: quoting the [article](https://blog.codecentric.de/en/2017/08/gomock-tutorial/):
 ```
 callFirst := mockDoer.EXPECT().DoSomething(1, "first this")
 callA := mockDoer.EXPECT().DoSomething(2, "then this").After(callFirst)
